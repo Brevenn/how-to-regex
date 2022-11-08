@@ -26,7 +26,7 @@
 
 ### Anchors
 
-The `Anchor` is what begins and finishes the regex.
+The `Anchor` is what begins and finishes the Regex.
 
 For example: 
 
@@ -47,6 +47,17 @@ In short, a `Quantifier` is used to determine how many times a specific characte
 *Our Model:* `([a-z0-9_\.-]+)` will match any string containing `a-z`, `0-9`, `_`, `.`, or `-`. The Quantifier `+` just meamns that it must contain atleast one of these characters in order to match correctly.
 
 ### OR Operator
+
+To explain what an `OR Operator`is for this walkthrough we are going to use a different snippet of code. The code above will unfortunately not be helpful in explaining.
+
+*OR Op Code:* `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
+
+This Regex is used to match a hex code using an OR Operator. 
+What this expression will do is look for a match where the snippet starts with the `#` character. This character must come first in the match as well as be followed by one of the parameters below.
+
+* `[a-f0-9]{6}` which will look for a match which must be a `6` character string containing a mix of `a-f` letters and `0-9` numbers.
+* `|` OR Operator
+* `[a-f0-9]{3}` which will look for a match which must be a `3` character string containing a mix of `a-f` letters and `0-9` numbers.
 
 ### Character Classes
 
