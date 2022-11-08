@@ -73,23 +73,23 @@ In our matching email snippet: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
 
 A `Flag` in a Regex is an optional parameter to a regex that modifies its behavior of searching. We are not currently using them in our snippets above.
 
-*Ignore Casing*
-`i` Makes the regex search for a match case-insensitively.
+*Ignore Casing:* `i`
+* Makes the regex search for a match case-insensitively.
 
-*Global*
-`g` Makes the expression search for all occurrences.
+*Global:* `g`
+* Makes the expression search for all occurrences.
 
-*Dot All*
-`s` Makes the wild character `.` match newlines as well.
+*Dot All:* `s`
+* Makes the wild character `.` match newlines as well.
 
-*Multiline*
-`m` Makes the boundary characters `^` and `$` match the beginning and ending of every single line instead of the beginning and ending of the whole string.
+*Multiline:* `u`
+* Makes the boundary characters `^` and `$` match the beginning and ending of every single line instead of the beginning and ending of the whole string.
 
-*Sticky*
-`y` Makes the expression start its searching from the index indicated in its lastIndex property.
+*Sticky:* `y`
+* Makes the expression start its searching from the index indicated in its lastIndex property.
 
-*Unicode*
-`u` Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
+*Unicode:* `u`
+* Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
 
 ### Grouping and Capturing
 
@@ -107,7 +107,7 @@ Groups group multiple patterns as a whole, and Capturing groups provide extra su
 
 ### Bracket Expressions
 
-Following with the *Email Validation* snippet `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+A `Bracket Expression` is an Regex enclosed in `[ ]` that shall match a specific set of single characters, and may match a specific set of multi-character collating elements, based on the non-empty set of list expressions contained in the bracket expression.
 
 ### Greedy and Lazy Match
 
