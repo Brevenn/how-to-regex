@@ -55,11 +55,14 @@ To explain what an `OR Operator`is for this walkthrough we are going to use a di
 This Regex is used to match a hex code using an OR Operator. 
 What this expression will do is look for a match where the snippet starts with the `#` character. This character must come first in the match as well as be followed by one of the parameters below.
 
-* `[a-f0-9]{6}` which will look for a match which must be a `6` character string containing a mix of `a-f` letters and `0-9` numbers.
+* `[a-f0-9]{6}` which will look for a match that must be a `6` character string containing a mix of `a-f` letters and `0-9` numbers.
+
 * `|` OR Operator
-* `[a-f0-9]{3}` which will look for a match which must be a `3` character string containing a mix of `a-f` letters and `0-9` numbers.
+
+* `[a-f0-9]{3}` which will look for a match that must be a `3` character string containing a mix of `a-f` letters and `0-9` numbers.
 
 ### Character Classes
+
 
 ### Flags
 
@@ -69,11 +72,39 @@ What this expression will do is look for a match where the snippet starts with t
 
 ### Greedy and Lazy Match
 
+There is no greedy or lazy match included for the snippet of code for matching the email.
+
 ### Boundaries
+
+If in a string we are looking for specific words, we can use `Boundaries` such as `^` and `$` which allow you to anchor the regex pattern to the beginning and end of the line.
+
+There are no boundaries in the code snippets above.
 
 ### Back-references
 
+There are no `Back-references` in the snippets above.
+
+But to summarize, back-references are regular expression commands which refer to a previous part of the matched regular expression. Back-references are specified with backslash and a single digit.
+
+*Example:* `('\1')`
+
+The part of the regular expression they refer to is called a subexpression, and is designated with parentheses.
+
 ### Look-ahead and Look-behind
+
+`Look-ahead`
+
+*Example:* `(?=foo)`
+
+Looks for what follows the current position in the expression `foo` using the `(? ...)` syntax. 
+
+#
+
+`Look-behind`
+
+*Example:* `(?<=foo)`
+
+Looks for what comes before the current position in the expression `foo` using the `(? ...)` syntax. 
 
 ## Author
 
