@@ -63,6 +63,11 @@ What this expression will do is look for a match where the snippet starts with t
 
 ### Character Classes
 
+`Character Classes` are sets of characters enclosed within `[ ]`. It specifies that thecharacters that will bring a successful matching single character from a given input string.
+
+In our matching email snippet: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+`d` is in place in our snippet and what it will match is a single letter character, `a-z`, after the `@` character in the email address. Guaranteeing that a letter character will be matched and not a number or special character.
 
 ### Flags
 
@@ -72,7 +77,9 @@ What this expression will do is look for a match where the snippet starts with t
 
 ### Greedy and Lazy Match
 
-There is no greedy or lazy match included for the snippet of code for matching the email.
+There is no `Greedy` or `Lazy` match included for the snippet of code for matching the email.
+
+But 'Greedy' means match longest possible string. 'Lazy' means match shortest possible string.
 
 ### Boundaries
 
