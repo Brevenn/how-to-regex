@@ -67,13 +67,47 @@ What this expression will do is look for a match where the snippet starts with t
 
 In our matching email snippet: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-`d` is in place in our snippet and what it will match is a single letter character, `a-z`, after the `@` character in the email address. Guaranteeing that a letter character will be matched and not a number or special character.
+`\d` is in place in our snippet and what it will match is a single letter character, `a-z`, after the `@` character in the email address. Guaranteeing that a letter character will be matched and not a number or special character.
 
 ### Flags
 
+A `Flag` in a Regex is an optional parameter to a regex that modifies its behavior of searching. We are not currently using them in our snippets above.
+
+*Ignore Casing*
+`i` Makes the regex search for a match case-insensitively.
+
+*Global*
+`g` Makes the expression search for all occurrences.
+
+*Dot All*
+`s` Makes the wild character `.` match newlines as well.
+
+*Multiline*
+`m` Makes the boundary characters `^` and `$` match the beginning and ending of every single line instead of the beginning and ending of the whole string.
+
+*Sticky*
+`y` Makes the expression start its searching from the index indicated in its lastIndex property.
+
+*Unicode*
+`u` Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.
+
 ### Grouping and Capturing
 
+We will use one of our code snippets from before to speak on `Grouping and Capturing`
+
+Groups group multiple patterns as a whole, and Capturing groups provide extra submatch information when using a Regex pattern to match against a string.
+
+*Snippet:* `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+`([a-z0-9_\.-]+)` would be classified as the first group in our Regex. This group must be true in order to continue the regex.
+
+`([\da-z\.-]+)` would be classified as the second group in our Regex. Again the group must be true to continue.
+
+`([a-z\.]{2,6})` would be classified as the third group. **All group guidelines must be followed to continue matching in the expression!**
+
 ### Bracket Expressions
+
+Following with the *Email Validation* snippet `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ### Greedy and Lazy Match
 
