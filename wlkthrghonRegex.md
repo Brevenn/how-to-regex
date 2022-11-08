@@ -1,6 +1,6 @@
 # Walkthrough on Regex!
 
-* *Howdy Folks! Need a crash course on how to use Regex expressions? Well below you can find a series of understandings behind what a regex defines and how it's syntax is used*
+* *Howdy Folks! Need a crash course on how to use Regexs? Well below you can find a series of understandings behind what a regex defines and how it's syntax is used*
 
 ### Summary
 
@@ -25,6 +25,16 @@
 ## Regex Components
 
 ### Anchors
+
+The anchor is what begins and finishes the regex.
+
+For example: 
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` has anchors of `^` and `$`.
+
+The code signifies that we are looking for an email that starts with `^([a-z0-9_\.-]+)` and ends with `.([a-z\.]{2,6})$`.
+
+I Understand all of those characters look confusing but they will be broken down later on. But basically what anchor means is that we are looking for something to match the guidlines of our code.
 
 ### Quantifiers
 
