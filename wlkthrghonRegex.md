@@ -92,7 +92,7 @@ The part of the regular expression they refer to is called a subexpression, and 
 
 ### Look-ahead and Look-behind
 
-`Look-ahead`
+`Look-aheads` are not being used in the current snippets above.
 
 *Example:* `(?=foo)`
 
@@ -100,7 +100,7 @@ Looks for what follows the current position in the expression `foo` using the `(
 
 #
 
-`Look-behind`
+`Look-behinds` are not being used in the current snippets above.
 
 *Example:* `(?<=foo)`
 
