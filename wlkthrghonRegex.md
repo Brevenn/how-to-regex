@@ -66,4 +66,10 @@ In short, a `Quantifier` is used to determine how many times a specific characte
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+**Charles Breven Glasgow**
+
+- **[GitHub](https://github.com/Brevenn)**
+- **[LinkedIn](https://www.linkedin.com/in/charles-glasgow-7b07a41a3/)**
+- **[Portfolio](https://brevenn.github.io/Portfolio-Full-Stack/)**
+
+#
